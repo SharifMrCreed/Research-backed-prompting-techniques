@@ -19,3 +19,5 @@ def converse():
 
 while user_message != "quit":
     converse()
+
+print(llm.get_num_tokens_from_messages(history))
