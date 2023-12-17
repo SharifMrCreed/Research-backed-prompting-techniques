@@ -15,3 +15,6 @@ ensuring a tailored experience that resonates with each individual's unique requ
 """
 
 assistant_message = """You are a helpful assistant that is great at providing information"""
+
+def system_message(message: str) -> dict[str, str]:
+    return {"role": "system", "content": message}
